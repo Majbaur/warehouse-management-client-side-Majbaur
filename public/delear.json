@@ -1,0 +1,45 @@
+[
+    {
+      "id": "1",
+      "name": "Elsie Carry",
+      "picture": "./user-images/user-1.jpg",
+      "rating": "4.7 out of 5",
+      "comment": "It is amusing. I got my beautiful car from here. Thanks to you."
+    },
+    {
+      "id": "2",
+      "name": "Gonzalez Sweeney",
+      "picture": "./user-images/user-2.jpg",
+      "rating": "5 out of 5",
+      "comment": "I was very worried about buying cars, but it makes to me very easy. Thank you for all."
+    },
+    {
+      "id": "3",
+      "name": "Howe Nixon",
+      "price": "$1,132.29",
+      "picture": "./user-images/user-3.jpg",
+      "rating": "4.8 out of 5",
+      "comment": "As i want to buy a car it gives to me like a beautiful car. Thank you about everything."
+    },
+    {
+      "id": "4",
+      "name": "Hernandez Key",
+      "picture": "./user-images/user-4.jpg",
+      "rating": "4.3 out of 5",
+      "comment": "Thank you, for a good car as a reasonable price."
+    },
+    {
+      "id": "5",
+      "name": "Ursula Fuentes",
+      "picture": "./user-images/user-5.jpg",
+      "rating": "5 out of 5",
+      "comment": "Excellent car at such a low price."
+    },
+    {
+      "id": "6",
+      "name": "Jeanette Klein",
+      "picture": "./user-images/user-6.jpg",
+      "rating": "4.9 out of 5",
+      "comment": "Excellent car at such a low price."
+    }
+  ]

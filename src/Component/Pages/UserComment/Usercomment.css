@@ -1,0 +1,48 @@
+.Usercomment{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+  
+.testimonial-col{
+   
+    box-shadow: 0 10px 20px 3px #00968814;
+    cursor: pointer;
+    transition: transform .5s;
+    float: left;
+    
+    
+}
+.testimonial-col P{
+    font-size: 14px;  
+}
+.userPic{
+  padding-left: 10px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.user img{
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+.user-info{
+    margin-left: 10px;
+    color: #27c0ff;
+    font-size: 20px;
+}
+.user-info p{
+    color: black;
+}
+
+.user-info small{
+    color: #009688;
+
+}
+.testimonial-col:hover{
+    transform: translateY(-7px);
+}
