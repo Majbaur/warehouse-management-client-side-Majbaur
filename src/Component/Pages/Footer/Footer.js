@@ -12,35 +12,35 @@ const Footer = () => {
         // <p className="footer-copyright">Copyright © {year} strength house</p>
         // <p className="footer-copyright">All rights reserved</p>
         // </footer>
-        <footer class="footer">
-  	 <div class="container">
-  	 	<div class="row">
-  	 		<div class="footer-col">
+        <footer className="footer">
+  	 <div className="container">
+  	 	<div className="row">
+  	 		<div className="footer-col">
   	 			<h4>company</h4>
   	 			<ul>
 					<li><Nav.Link style={{color:'white'}} as={Link} to="about">About Us</Nav.Link></li>
 					<li><Nav.Link style={{color:'white'}}  href="home#Products">Our Products</Nav.Link></li>
   	 			</ul>
   	 		</div>
-  	 		<div class="footer-col">
+  	 		<div className="footer-col">
   	 			<h4>get help</h4>
   	 			<ul>
 				   <li><Nav.Link style={{color:'white'}} as={Link} to="">Order Status</Nav.Link></li>
   	 			</ul>
   	 		</div>
-  	 		<div class="footer-col">
+  	 		<div className="footer-col">
   	 			<h4>online shop</h4>
   	 			<ul>
 				   <li><Nav.Link style={{color:'white'}}  href="home#Products">Vehicle</Nav.Link></li>
   	 			</ul>
   	 		</div>
-  	 		<div class="footer-col">
+  	 		<div className="footer-col">
   	 			<h4>follow us</h4>
-  	 			<div class="social-links">
-				   <Link as={Link} to=""><i class="fab fa-facebook-f"></i></Link>
-				   <Link as={Link} to=""><i class="fab fa-twitter"></i></Link>
-				   <Link as={Link} to=""><i class="fab fa-instagram"></i></Link>
-				   <Link as={Link} to=""><i class="fab fa-linkedin-in"></i></Link>
+  	 			<div className="social-links">
+				   <Link as={Link} to=""><i className="fab fa-facebook-f"></i></Link>
+				   <Link as={Link} to=""><i className="fab fa-twitter"></i></Link>
+				   <Link as={Link} to=""><i className="fab fa-instagram"></i></Link>
+				   <Link as={Link} to=""><i className="fab fa-linkedin-in"></i></Link>
   	 			</div>
   	 		</div>
   	 	</div>

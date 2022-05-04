@@ -7,7 +7,7 @@ const Usercomments = () => {
     const [Usercomments, setUsercomments] = useState([]);
 
     useEffect( ()=>{
-        fetch('delear.json')
+        fetch('http://localhost:5000/delear')
         .then(res => res.json())
         .then(data => setUsercomments(data));
     }, [])
@@ -19,7 +19,7 @@ const Usercomments = () => {
             <div className="Usercomments-container">
             {
                 Usercomments.map(usercomment => <Usercomment
-                    key={usercomment.id}
+                    key={usercomment._id}
                     usercomment={usercomment}
                 >
                 </Usercomment>)

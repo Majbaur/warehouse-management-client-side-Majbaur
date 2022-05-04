@@ -80,23 +80,5 @@
         "img": "./images/foldble 26 t cycle.jpg",
         "quantity":"5",
         "supplierName":"Balakrishnan Islam"
-    },
-    {
-        "id": 10,
-        "name": "Pradeep cycle",
-        "price": "$19000",
-        "description": "If you strive for real results and want to receive the guidance you need to set yourself up for success, then this is the package for you. you'll be working with me directly and chacking in twice a week. Including full access to my Gym.",
-        "img": "./images/Pradeep cycle.jpg",
-        "quantity":"7",
-        "supplierName":"Robert Hook"
-    },
-    {
-        "id": 11,
-        "name": "Jade 26T Cycle",
-        "price": "$10000",
-        "description": "If you strive for real results and want to receive the guidance you need to set yourself up for success, then this is the package for you. you'll be working with me directly and chacking in twice a week. Including full access to my Gym.",
-        "img": "./images/Jade 26T Cycle.jpg",
-        "quantity":"12",
-        "supplierName":"Jamile Hossain"
     }
 ]
