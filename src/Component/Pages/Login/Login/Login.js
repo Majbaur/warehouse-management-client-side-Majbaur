@@ -4,12 +4,10 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import axios from 'axios';
-import useToken from '../../../../hooks/useToken';
-import PageTitle from './../../Shared/PageTitle/PageTitle';
 import auth from './../../../../firebase.init';
+import { axios } from 'axios';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -27,13 +25,13 @@ const Login = () => {
     ] = useSignInWithEmailAndPassword(auth);
 
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
-    const [token] = useToken(user);
+
     if (loading || sending) {
         return <Loading></Loading>
     }
 
-    if (token) {
-        navigate(from, { replace: true });
+    if (user) {
+        // navigate(from, { replace: true });
     }
 
     if (error) {
@@ -46,6 +44,9 @@ const Login = () => {
         const password = passwordRef.current.value;
 
         await signInWithEmailAndPassword(email, password);
+        const {data} = await axios.post('http://localhost:5000/login', {email});
+        localStorage.setItem('accessToken', data.accessToken);
+        navigate(from, { replace: true });
     }
 
     const navigateRegister = event => {
@@ -65,7 +66,6 @@ const Login = () => {
 
     return (
         <div className='container w-50 mx-auto'>
-            <PageTitle title="Login"></PageTitle>
             <h2 className='text-primary text-center mt-2'>Please Login</h2>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">

@@ -13,7 +13,7 @@ const Order = () => {
         
         const getOrders = async() =>{
             const email = user?.email;
-            const url = `https://powerful-river-83058.herokuapp.com/order?email=${email}`;
+            const url = `http://localhost:5000/order?email=${email}`;
             try{
                 const {data} = await axiosPrivate.get(url);
                 setOrders(data);
@@ -34,7 +34,7 @@ const Order = () => {
             <h2>Your orders: {orders.length}</h2>
             {
                 orders.map(order =><div key={order._id}>
-                    <p>{order.email} : {order.service}</p>
+                    <p>{order.email} : {order.product}</p>
                 </div>)
             }
         </div>
