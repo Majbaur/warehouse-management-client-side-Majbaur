@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import useServiceDetail from '../../hooks/useServiceDetail';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import axios from 'axios';
 import { toast } from 'react-toastify';
+import useServiceDetail from '../../../hooks/useServiceDetail.js';
 
 const Checkout = () => {
     const {serviceId} = useParams();

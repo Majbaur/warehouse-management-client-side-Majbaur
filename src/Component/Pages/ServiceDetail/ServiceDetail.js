@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import useServiceDetail from '../../hooks/useServiceDetail';
+import useServiceDetail from '../../../hooks/useServiceDetail.js';
 
 const ServiceDetail = () => {
     const { serviceId } = useParams();

@@ -2,8 +2,8 @@ import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
-import axiosPrivate from '../../api/axiosPrivate';
-import auth from '../../firebase.init';
+import axiosPrivate from './../../../api/axiosPrivate';
+import auth from './../../../firebase.init';
 
 const Order = () => {
     const [user] = useAuthState(auth);
