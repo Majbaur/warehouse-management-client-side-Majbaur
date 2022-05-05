@@ -3,16 +3,16 @@ import './App.css';
 import Header from './Component/Pages/Header/Header';
 import Home from './Component/Pages/Home/Home/Home';
 import ServiceDetail from './Component/Pages/ServiceDetail/ServiceDetail';
-import Login from './Component/Pages/LogIn/Login/Login';
-import Register from './Component/Pages/LogIn/Register/Register';
-import RequireAuth from './Component/Pages/LogIn/RequireAuth/RequireAuth';
-import Checkout from './Component/Pages/CheckOut/CheckOut/CheckOut';
+import Register from './Component/Pages/Login/Register/Register';
+import RequireAuth from './Component/Pages/Login/RequireAuth/RequireAuth';
 import AddService from './Component/Pages/AddService/AddService';
 import ManageServices from './Component/Pages/ManageServices/ManageServices';
 import Order from './Component/Pages/Order/Order';
-import NotFound from './Component/Pages/Shared/NotFound/NotFound';
 import Footer from './Component/Pages/Shared/Footer/Footer';
 import { ToastContainer } from 'react-toastify';
+import Login from './Component/Pages/Login/Login/Login';
+import Checkout from './Component/Pages/Checkout/Checkout';
+
 
 function App() {
   return (
@@ -44,7 +44,7 @@ function App() {
             <Order></Order>
           </RequireAuth>
         }></Route>
-        <Route path="*" element={<NotFound></NotFound>}></Route>
+        {/* <Route path="*" element={<NotFound></NotFound>}></Route> */}
       </Routes>
       <Footer></Footer>
       <ToastContainer />
