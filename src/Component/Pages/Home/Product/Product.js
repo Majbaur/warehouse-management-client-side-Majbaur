@@ -2,11 +2,14 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Product.css';
 
-const Product = ({product}) => {
-    const {id, name, img, description, price,supplierName,quantity} = product;
+const Product = ({ product }) => {
+    const { id, name, img, description, price, supplierName, quantity } = product;
     const navigate = useNavigate();
 
-    
+    const navigateToProductUpdate = id => {
+        navigate(`/product/${id}`)
+    }
+
     return (
         <div className='product'>
             <img className='w-100' src={img} alt="" />
@@ -15,7 +18,7 @@ const Product = ({product}) => {
             <p>Quantity: {quantity}</p>
             <p>Supplier Name: {supplierName}</p>
             <p><small>{description}</small></p>
-            <button className="updateButton">Update</button>
+            <button onClick={() => navigateToProductUpdate(id)} className="updateButton">Update</button>
         </div>
     );
 };

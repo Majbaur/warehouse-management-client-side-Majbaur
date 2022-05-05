@@ -13,7 +13,7 @@ const Usercomments = () => {
     }, [])
 
     return (
-        <div id='Usercomments' className='container'>
+        <div className='container'>
             <div className="row">
             <h1 className='text-primary text-center mt-5'> Our Usercomments</h1>
             <div className="Usercomments-container">
