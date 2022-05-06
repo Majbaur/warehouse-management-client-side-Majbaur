@@ -1,0 +1,21 @@
+.login-form input
+{
+    border: 2px solid #343A40;
+    color: #7C99AC;
+}
+
+.login-form  button
+{
+    background-color: #FF7F3F;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+
+.social-btn button
+{
+    background-color: #141E27;
+    color: #fff;
+    border: 1px solid transparent;
+}
+

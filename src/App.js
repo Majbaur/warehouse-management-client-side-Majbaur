@@ -1,61 +1,47 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Header from './Component/Pages/Header/Header';
-import Home from './Component/Pages/Home/Home/Home';
-import ProductDetail from './Component/Pages/Inventory/Inventory';
-import Register from './Component/Pages/Login/Register/Register';
-import RequireAuth from './Component/Pages/Login/RequireAuth/RequireAuth';
-import ManageProducts from './Component/Pages/ManageProducts/ManageProducts';
-import Footer from './Component/Pages/Shared/Footer/Footer';
-import { ToastContainer } from 'react-toastify';
-import Login from './Component/Pages/Login/Login/Login';
-import AddProduct from './Component/Pages/AddProduct/AddProduct';
-import Inventory from './Component/Pages/Inventory/Inventory';
-import AddItem from './Component/Pages/AddItem/AddItem.js';
-import NotFound from './Component/Pages/NotFound/NotFound';
+import Header from './Components/Header/Header';
+import Home from './Components/Home/Home/Home';
+import Register from './Components/Register/Register';
+import RequireAuth from './Components/RequireAuth/RequireAuth';
+import AddProduct from './Components/Management/AddProducts/AddProduct';
+import Blog from './Components/Blog/Blog/Blog';
+import MyItems from './Components/User/MyItems/MyItems';
+import Login from './Components/Login/Login';
+import Footer from './Components/Footer/Footer';
+import FruitDetailes from './Components/Products/FruitsDetails/FruitDetailes/FruitDetailes';
+import Management from './Components/Management/Management/Management';
+import NotFound from './Components/NotFound/NotFound';
 
 
 function App() {
   return (
-    <div>
-    <Header></Header>
+    <div className="App">
+      <Header></Header>
       <Routes>
-        <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/home" element={<Home></Home>}></Route>
-        <Route path='/product/:productId' element={<ProductDetail></ProductDetail>}></Route>
-        <Route path="/login" element={<Login></Login>}></Route>
-        <Route path="/register" element={<Register></Register>}></Route>
-        <Route path="/inventory/:productId" element={
+        <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/inventory/:id' element={
           <RequireAuth>
-            <Inventory></Inventory>
+            <FruitDetailes></FruitDetailes>
           </RequireAuth>
         }></Route>
-        <Route path="/addproduct" element={
+        <Route path='/manageInventories' element={<Management></Management>}></Route>
+        <Route path='/newItem' element={<AddProduct></AddProduct>}></Route>
+        <Route path="/blog" element={<Blog></Blog>}></Route>
+        <Route path="/myitems" element={
           <RequireAuth>
-            <AddProduct></AddProduct>
+            <MyItems>
+            </MyItems>
           </RequireAuth>
         }></Route>
-        <Route path="/manage" element={
-          <RequireAuth>
-            <ManageProducts></ManageProducts>
-          </RequireAuth>
-        }></Route>
-        
-        <Route path="/addItems" element={
-          <RequireAuth>
-          <AddItem></AddItem>
-          </RequireAuth>
-        }></Route>
-        <Route path="/myItems" element={
-          <RequireAuth>
-            {/* <Order></Order> */}
-          </RequireAuth>
-        }></Route>
-       
-        <Route path="*" element={<NotFound></NotFound>}></Route>
+
+        <Route></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
-      <ToastContainer />
     </div>
   );
 }

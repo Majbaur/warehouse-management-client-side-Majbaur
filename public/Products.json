@@ -1,84 +1,93 @@
 [
     {
-        "id": 1,
+
         "name": "AEROBICS/ZUMBA",
         "price": "$300000",
         "description": "Energize your mornings and come train and workout with our personal trainers at Mutants Gym. Join our Aerobics Yoga and Zumba lessons and have fun while exercising.",
         "img": "./images/BMW 8.jpg",
-        "quantity":"15",
-        "supplierName":"Malhotra Das"
+        "Quantity":"15",
+        "Supplier":"Malhotra Das",
+        "sale": 0
     },
     
     {
-        "id": 2,
+        
         "name": "STRENGTH TRAINING",
         "price": "$1500000",
         "description": "Build your strength and get those extra few pounds in before the swimsuit season. Come train under expert personal trainers only at Mutants Gym.",
         "img": "./images/BMW X3.jpg",
-        "quantity":"13",
-        "supplierName":"Kapadia Saha"
+        "Quantity":"13",
+        "Supplier":"Kapadia Saha",
+        "sale": 0
     },
     {
-        "id": 3,
+        
         "name": "X5ModelImage",
         "price": "$10000000",
         "description": "If you strive for real results and want to receive the guidance you need to set yourself up for success, then this is the package for you. you'll be working with me directly and chacking in twice a week. Including full access to my Gym.",
         "img": "./images/X5ModelImage.jpg",
-        "quantity":"17",
-        "supplierName":"James Whill"
+        "Quantity":"17",
+        "Supplier":"James Whill",
+        "sale": 0
     },
     {
-        "id": 4,
+        
         "name": "Microbus-2f7f",
         "price": "$300000",
         "description": "If you want an awesome body structure to impress someone or to look dashing good, then this package is for you. in this package you get full access to my gym and are able to train with direct to me. and I also give you a full diet list for you.",
         "img": "./images/Micro-2f7f.jpg",
-        "quantity":"19",
-        "supplierName":"Gokhale Alom"
+        "Quantity":"19",
+        "Supplier":"Gokhale Alom",
+        "sale": 0
     },
     {
-        "id": 5,
+        
         "name": "Luxury Motorbike",
         "price": "$10000000",
         "description": "If you strive for real results and want to receive the guidance you need to set yourself up for success, then this is the package for you. you'll be working with me directly and chacking in twice a week. Including full access to my Gym.",
         "img": "./images/Luxury Motorbike.jpg",
-        "quantity":"5",
-        "supplierName":"Acharya Islam"
+        "Quantity":"5",
+        "Supplier":"Acharya Islam",
+        "sale": 0
     },
     {
-        "id": 6,
+        
         "name": "Triumph-Rocket-III-motorcycle",
         "price": "$300000",
         "description": "If you want an awesome body structure to impress someone or to look dashing good, then this package is for you. in this package you get full access to my gym and are able to train with direct to me. and I also give you a full diet list for you.",
         "img": "./images/Triumph-Rocket-III-motorcycle.jpg",
-        "quantity":"16",
-        "supplierName":"Laghari Roy"
+        "Quantity":"16",
+        "Supplier":"Laghari Roy",
+        "sale": 0
     },
     {
-        "id": 7,
+        
         "name": "Panigale V4",
         "price": "$17000000",
         "description": "If you strive for real results and want to receive the guidance you need to set yourself up for success, then this is the package for you. you'll be working with me directly and chacking in twice a week. Including full access to my Gym.",
         "img": "./images/Panigale V4.jpg",
-        "quantity":"7",
-        "supplierName":"Reddy Moddok"
+        "Quantity":"7",
+        "Supplier":"Reddy Moddok",
+        "sale": 0
     },
     {
-        "id": 8,
+        
         "name": "C1-Hybrid-e133",
         "price": "$18000",
         "description": "Lose extra weight and get in shape with expert personal trainers and top notch fitness equipments only at Mutants Gym, the best gym in Patna.",
         "img": "./images/C1-Hybrid-e133.png",
-        "quantity":"13",
-        "supplierName":"Anthony Dev"
+        "Quantity":"13",
+        "Supplier":"Anthony Dev",
+        "sale": 0
     },
     {
-        "id": 9,
+        
         "name": "foldble 26 t cycle",
         "price": "$12000",
         "description": "If you strive for real results and want to receive the guidance you need to set yourself up for success, then this is the package for you. you'll be working with me directly and chacking in twice a week. Including full access to my Gym.",
         "img": "./images/foldble 26 t cycle.jpg",
-        "quantity":"15",
-        "supplierName":"Balakrishnan Islam"
+        "Quantity":"15",
+        "Supplier":"Balakrishnan Islam",
+        "sale": 0
     }
 ]

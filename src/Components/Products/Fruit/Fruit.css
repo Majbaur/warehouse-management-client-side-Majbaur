@@ -1,0 +1,24 @@
+.round-img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.round-img img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.inv-btn
+{
+    background-color: #363062;
+    color: #fff;
+    border: 2px solid transparent;
+    padding:0.7em 3em; 
+    border-radius:0.4em;
+}
+
+

@@ -1,0 +1,23 @@
+#restock-card
+{
+    background-color: #363062;
+    color: #fff;
+}
+
+#restock-card input
+{
+    border: 2px solid #D1D1D1;
+}
+
+
+#restock-card button
+{
+    border: 2px solid transparent;
+    padding:0.7em 3em; 
+    background-color: #FFD59E ;
+}
+
+#restock-card button:hover
+{
+    background-color: #E6BA95;
+}
