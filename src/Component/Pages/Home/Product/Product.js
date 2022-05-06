@@ -7,7 +7,7 @@ const Product = ({ product }) => {
     const navigate = useNavigate();
 
     const navigateToProductUpdate = id => {
-        navigate(`/product/${id}`)
+        navigate('./')
     }
 
     return (

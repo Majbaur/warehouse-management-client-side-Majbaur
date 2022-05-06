@@ -1,8 +1,14 @@
 import React from 'react';
 import useProducts from '../../../hooks/useProducts';
-
+import { useNavigate } from 'react-router-dom';
+import './ManageProducts.css'
 const ManageProducts = () => {
     const [products, setproducts] = useProducts();
+    const navigate = useNavigate();
+
+    const AddProduct = id => {
+        navigate(`/addproduct`)
+    }
 
     const handleDelete = id =>{
         const proceed = window.confirm('Are you sure?');
@@ -28,6 +34,8 @@ const ManageProducts = () => {
                     
                 </div>)
             }
+            <button onClick={() => AddProduct()} className="AddProduct">Added New Product</button>
+
         </div>
     );
 };
