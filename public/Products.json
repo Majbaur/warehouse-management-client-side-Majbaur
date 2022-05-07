@@ -4,7 +4,7 @@
         "name": "McLare P1",
         "price": "$300000",
         "description": "Energize your mornings and come train and workout with our personal trainers at Mutants Gym. Join our Aerobics Yoga and Zumba lessons and have fun while exercising.",
-        "img": "./images/BMW 8.jpg",
+        "img": "https://www.leasecosts.ca/sites/default/files/styles/car_thumb_big/public/2017-09/maserati_canada_ghibli.jpg?itok=CpHvDYzz",
         "Quantity":"15",
         "Supplier":"Malhotra Das",
         "sale": 0
@@ -15,7 +15,7 @@
         "name": "BMW X3",
         "price": "$1500000",
         "description": "Build your strength and get those extra few pounds in before the swimsuit season. Come train under expert personal trainers only at Mutants Gym.",
-        "img": "./images/BMW X3.jpg",
+        "img": "https://www.ccarprice.com/products/BMW_X3_sDrive30i_2021.jpg",
         "Quantity":"13",
         "Supplier":"Kapadia Saha",
         "sale": 0
@@ -25,7 +25,7 @@
         "name": "X5ModelImage",
         "price": "$10000000",
         "description": "If you strive for real results and want to receive the guidance you need to set yourself up for success, then this is the package for you. you'll be working with me directly and chacking in twice a week. Including full access to my Gym.",
-        "img": "./images/X5ModelImage.jpg",
+        "img": "https://motorscout.com.au/team/assets/data/066v19.jpg",
         "Quantity":"17",
         "Supplier":"James Whill",
         "sale": 0
@@ -35,7 +35,7 @@
         "name": "Microbus-2f7f",
         "price": "$300000",
         "description": "If you want an awesome body structure to impress someone or to look dashing good, then this package is for you. in this package you get full access to my gym and are able to train with direct to me. and I also give you a full diet list for you.",
-        "img": "./images/Micro-2f7f.jpg",
+        "img": "https://www.carscoops.com/wp-content/uploads/2022/03/2001-VW-Microbus-00003.jpg",
         "Quantity":"19",
         "Supplier":"Gokhale Alom",
         "sale": 0
@@ -45,7 +45,7 @@
         "name": "Luxury Motorbike",
         "price": "$10000000",
         "description": "If you strive for real results and want to receive the guidance you need to set yourself up for success, then this is the package for you. you'll be working with me directly and chacking in twice a week. Including full access to my Gym.",
-        "img": "./images/Luxury Motorbike.jpg",
+        "img": "https://www.lux-review.com/wp-content/uploads/2021/09/Motorbike.jpg",
         "Quantity":"5",
         "Supplier":"Acharya Islam",
         "sale": 0
@@ -55,7 +55,7 @@
         "name": "Triumph-Rocket-III-motorcycle",
         "price": "$300000",
         "description": "If you want an awesome body structure to impress someone or to look dashing good, then this package is for you. in this package you get full access to my gym and are able to train with direct to me. and I also give you a full diet list for you.",
-        "img": "./images/Triumph-Rocket-III-motorcycle.jpg",
+        "img": "https://cdn.britannica.com/16/126516-050-2D2DB8AC/Triumph-Rocket-III-motorcycle-2005.jpg",
         "Quantity":"16",
         "Supplier":"Laghari Roy",
         "sale": 0

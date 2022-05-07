@@ -7,20 +7,20 @@ import GetProducts from './../../../Hooks/GetProducts';
 const Product = (props) =>{
     
     const {item} = props;
-    const [fruits , setFruits] = GetProducts()
+    const [products , setProducts] = GetProducts()
 
     const handleDelete = id =>{
         const proceed = window.confirm('Are you sure?');
         if(proceed){
-            const url = `http://localhost:5000/product/${id}`;
+            const url = `https://desolate-gorge-07687.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
             .then(res => res.json())
             .then(data => {
                 console.log(data);
-                const remaining = fruits.filter(fruit => fruit._id !== id);
-                setFruits(remaining);
+                const remaining = products.filter(product => product._id !== id);
+                setProducts(remaining);
             })
         }
     }

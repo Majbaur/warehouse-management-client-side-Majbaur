@@ -29,7 +29,7 @@ const RegisterWithEmail = (props) => {
                     </Button>
                 </Form>
 
-                <p>Already Register in <span>Fruity</span>? <Link className='text-decoration-none text-success' to='/login' >Log in Here!</Link></p>
+                <p>Already Register in <span>Product</span>? <Link className='text-decoration-none text-success' to='/login' >Log in Here!</Link></p>
             </section>
         </div>
     );

@@ -5,6 +5,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
 import "./Header.css"
+import logo from '../../images/carLogo.jpg'
 
 
 const Header = () => 
@@ -16,23 +17,23 @@ const Header = () =>
         signOut(auth);
     }
 
-    const addItemLink = <Nav.Link as={Link} to='/newItem'>Add Item</Nav.Link>
-    const myItemsLink = <Nav.Link as={Link} to='/myitems'>My Items</Nav.Link>
-    const manageItemsLink = <Nav.Link as={Link} to='/manageInventories'>Manage Items</Nav.Link>
+    const addItemLink = <Nav.Link style={{color:'black'}} as={Link} to='/newItem'>Add Item</Nav.Link>
+    const myItemsLink = <Nav.Link style={{color:'black'}} as={Link} to='/myitems'>My Items</Nav.Link>
+    const manageItemsLink = <Nav.Link style={{color:'black'}} as={Link} to='/manageInventories'>Manage Items</Nav.Link>
 
     return (
-        <div>
+        <div className='header'>
             <Navbar collapseOnSelect expand="lg" className='p-3' fixed='top' variant="dark">
                 <Container>
                     <Navbar.Brand as={Link} to="/" className='d-flex align-items-center brand'>
-                        <img height={40} src="https://cdn.pixabay.com/photo/2012/04/18/12/54/strawberry-36949__340.png" className='me-2' alt="" />
-                        Fruity
+                        <img height={75} src={logo} className='me-2' alt=""  />
+                        <h4 style={{color:'black'}}>Drems Vehicle</h4>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">
-                            <Nav.Link as={Link} to='/home'>Home</Nav.Link>
-                            <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
+                            <Nav.Link style={{color:'black'}} as={Link} to='/home'>Home</Nav.Link>
+                            <Nav.Link style={{color:'black'}} as={Link} to="/blog">Blog</Nav.Link>
                             {
                                 user ? manageItemsLink: null
                             }
@@ -48,7 +49,7 @@ const Header = () =>
                             
 
                             {
-                                user ? <button className='btn btn-link text-decoration-none text-white' onClick={handleSignout}>Logout</button> : <Nav.Link as={Link} to='/login'>Log In</Nav.Link>
+                                user ? <button className='btn btn-link text-decoration-none text-black' onClick={handleSignout}>Logout</button> : <Nav.Link as={Link} to='/login'>Log In</Nav.Link>
                             }
                         </Nav>
                     </Navbar.Collapse>

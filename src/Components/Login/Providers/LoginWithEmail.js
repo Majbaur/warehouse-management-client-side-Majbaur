@@ -26,7 +26,7 @@ const LoginWithEmail = (props) =>
                     </Button>
                 </Form>
 
-                <p>New in <span>Fruity</span>? <Link className='text-decoration-none text-danger' to='/register'>Register Now!</Link></p>
+                <p>New in <span>Product</span>? <Link className='text-decoration-none text-danger' to='/register'>Register Now!</Link></p>
             </section>
 
         </div>

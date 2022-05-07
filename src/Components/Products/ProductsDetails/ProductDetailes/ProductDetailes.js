@@ -2,17 +2,17 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import AddQuantity from '../AddQuantity/AddQuantity';
 import ProductDetailesTable from '../ProductDetailsTable/ProductDetailesTable';
-import "./FoodDetailes.css"
+import "./ProductDetailes.css"
 
 
-const FruitDetailes = () => {
+const ProductDetailes = () => {
 
     const { id } = useParams();
 
     const [item, setItem] = useState({})
 
     useEffect(() => {
-        const url = `http://localhost:5000/item/${id}`;
+        const url = `https://desolate-gorge-07687.herokuapp.com/item/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setItem(data))
@@ -47,7 +47,7 @@ const FruitDetailes = () => {
 
     async function handleItemRestock(item)
     {
-        const url = `http://localhost:5000/restock/${id}`;
+        const url = `https://desolate-gorge-07687.herokuapp.com/restock/${id}`;
         fetch(url , {
             method : "PUT",
             headers:
@@ -66,7 +66,7 @@ const FruitDetailes = () => {
     const handleItemDelivered = (item) =>
     {
         
-        const url = `http://localhost:5000/delivered/${id}`;
+        const url = `https://desolate-gorge-07687.herokuapp.com/delivered/${id}`;
         fetch(url , {
             method : "PUT",
             headers:
@@ -94,4 +94,4 @@ const FruitDetailes = () => {
     );
 };
 
-export default FruitDetailes;
+export default ProductDetailes;

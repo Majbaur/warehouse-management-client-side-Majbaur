@@ -8,7 +8,7 @@ const UserComments = () => {
     const [Usercomments, setUsercomments] = useState([]);
 
     useEffect( ()=>{
-        fetch('http://localhost:5000/delear')
+        fetch('https://desolate-gorge-07687.herokuapp.com/delear')
         .then(res => res.json())
         .then(data => setUsercomments(data));
     }, [])

@@ -17,7 +17,7 @@ const WareHouse = () => {
 
 
     useEffect(() => {
-        fetch("http://localhost:5000/itemsCount")
+        fetch("https://desolate-gorge-07687.herokuapp.com/itemsCount")
             .then(res => res.json())
             .then(data => {
                 const count = data.count;

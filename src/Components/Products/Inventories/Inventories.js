@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Loading from '../../Loading/Loading';
-import Fruit from '../Fruit/Fruit';
+import Product from '../Product/Product';
 import "./Inventories.css";
 import GetProducts from './../../../Hooks/GetProducts';
 
@@ -23,7 +23,7 @@ const Inventories = () =>
         isLoad = false;
     }
 
-    const fruits = newItems.slice(0,6)
+    const products = newItems.slice(0,6)
 
 
     return (
@@ -36,7 +36,7 @@ const Inventories = () =>
                 }
                 <div  className="row row-cols-1 row-cols-md-3 g-5">
                     {
-                        fruits.map(item => <Fruit key={item._id} fruit={item}></Fruit>)
+                        products.map(item => <Product key={item._id} product={item}></Product>)
                     }
                 </div>
                 

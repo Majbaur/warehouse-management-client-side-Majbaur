@@ -2,11 +2,11 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
-import "./Fruit.css"
-const Fruit = (props) => {
+import "./Product.css"
+const Product = (props) => {
 
-    const { fruit } = props;
-    const { _id, name, img , description , Quantity , Supplier , price } = fruit;
+    const { product } = props;
+    const { _id, name, img , description , Quantity , Supplier , price } = product;
 
     const navigate = useNavigate();
 
@@ -20,7 +20,7 @@ const Fruit = (props) => {
     return (
         <article>
             <div data-aos="fade-up" className="col ">
-                <div className="card h-100 border-start-0 border-bottom-0 border-top-0 p-3 border-end-3">
+                <div className="card h-100 cardImage border-start-0 border-bottom-0 border-top-0 p-3 border-end-3">
                     <div className='round-img mx-auto'>
                         <img src={img} className="card-img-top w-100" alt="..." />
                     </div>
@@ -40,4 +40,4 @@ const Fruit = (props) => {
     );
 };
 
-export default Fruit;
+export default Product;
