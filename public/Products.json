@@ -1,7 +1,7 @@
 [
     {
 
-        "name": "AEROBICS/ZUMBA",
+        "name": "McLare P1",
         "price": "$300000",
         "description": "Energize your mornings and come train and workout with our personal trainers at Mutants Gym. Join our Aerobics Yoga and Zumba lessons and have fun while exercising.",
         "img": "./images/BMW 8.jpg",
@@ -12,7 +12,7 @@
     
     {
         
-        "name": "STRENGTH TRAINING",
+        "name": "BMW X3",
         "price": "$1500000",
         "description": "Build your strength and get those extra few pounds in before the swimsuit season. Come train under expert personal trainers only at Mutants Gym.",
         "img": "./images/BMW X3.jpg",
@@ -58,36 +58,6 @@
         "img": "./images/Triumph-Rocket-III-motorcycle.jpg",
         "Quantity":"16",
         "Supplier":"Laghari Roy",
-        "sale": 0
-    },
-    {
-        
-        "name": "Panigale V4",
-        "price": "$17000000",
-        "description": "If you strive for real results and want to receive the guidance you need to set yourself up for success, then this is the package for you. you'll be working with me directly and chacking in twice a week. Including full access to my Gym.",
-        "img": "./images/Panigale V4.jpg",
-        "Quantity":"7",
-        "Supplier":"Reddy Moddok",
-        "sale": 0
-    },
-    {
-        
-        "name": "C1-Hybrid-e133",
-        "price": "$18000",
-        "description": "Lose extra weight and get in shape with expert personal trainers and top notch fitness equipments only at Mutants Gym, the best gym in Patna.",
-        "img": "./images/C1-Hybrid-e133.png",
-        "Quantity":"13",
-        "Supplier":"Anthony Dev",
-        "sale": 0
-    },
-    {
-        
-        "name": "foldble 26 t cycle",
-        "price": "$12000",
-        "description": "If you strive for real results and want to receive the guidance you need to set yourself up for success, then this is the package for you. you'll be working with me directly and chacking in twice a week. Including full access to my Gym.",
-        "img": "./images/foldble 26 t cycle.jpg",
-        "Quantity":"15",
-        "Supplier":"Balakrishnan Islam",
         "sale": 0
     }
 ]

@@ -15,7 +15,7 @@ const AddProduct = () =>
         const img = event.target.img.value;
         const description = event.target.description.value;
         const price = event.target.price.value;
-        const quantity = event.target.quantity.value;
+        const Quantity = event.target.Quantity.value;
         const sale = event.target.sale.value;
         const supplier = event.target.supplier.value;
         const newItem = {
@@ -23,7 +23,7 @@ const AddProduct = () =>
             img : img,
             description : description,
             price : price,
-            quantity : quantity,
+            Quantity : Quantity,
             supplier : supplier,
             sale : sale,
             user_Name : user.displayName,
