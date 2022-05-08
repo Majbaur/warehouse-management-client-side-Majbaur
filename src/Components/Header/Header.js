@@ -17,7 +17,7 @@ const Header = () =>
         signOut(auth);
     }
 
-    const addItemLink = <Nav.Link style={{color:'black'}} as={Link} to='/newItem'>Add Item</Nav.Link>
+    const addItemLink = <Nav.Link style={{color:'black'}} as={Link} to='/addItem'>Add Item</Nav.Link>
     const myItemsLink = <Nav.Link style={{color:'black'}} as={Link} to='/myitems'>My Items</Nav.Link>
     const manageItemsLink = <Nav.Link style={{color:'black'}} as={Link} to='/manageInventories'>Manage Items</Nav.Link>
 

@@ -1,69 +1,43 @@
-// import React from 'react';
-// import { useAuthState } from 'react-firebase-hooks/auth';
-// import auth from '../../../firebase.init';
-
-// const MyItems = () => {
-//     const [ currentUser, error, loading ] = useAuthState(auth);
-
-//     console.log(currentUser);
-
-//     let message; 
-//     let success;
-
-//     if (loading) {
-//         message = <p>Loading</p>
-//     }
-// /* 
-//     if (user) {
-//         success = <p>current user {user.email}</p>
-//     } */
-
-
-//     return (
-//         <div className='mar-20' data-aos="fade-up">
-//             <div>
-//                 {message}
-//                 {success}
-//             </div>
-//         </div>
-//     );
-// };
-
-// export default MyItems;
-
-
-
-
-
-
-
-
-
-import React from 'react';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { axios } from 'axios';
 import auth from './../../../firebase.init';
 import { useAuthState } from 'react-firebase-hooks/auth';
-
-
+import UserProduct from './../UserProduct/UserProduct';
+import './MyItems.css'
 const MyItems = () => {
-    const [user]=useAuthState(auth)
-    const [services,setServices]=useState([])
-    useEffect(()=>{
-        const getServices= async()=>{
-            const url=`http://localhost:5000/item`
-            fetch('url')
-            .then(res => res.json())
-            .then(data=>setServices(data))
+    const [user]= useAuthState(auth);
+    const [addItems,setAddItems]=useState([])
+    useEffect(() =>{
+        const getAddItems=async () => {
+            const email=user.email
+            const url = `https://desolate-gorge-07687.herokuapp.com/addedItem?email=${email}`
+            fetch(url, {
+                method: 'GET',
+                headers: {
+                    'content-type': 'application/json'
+                },
+            })
+            .then(res=>res.json())
+            .then(result =>{
+                setAddItems(result)
+            })
+            // const{data}= await axios.get(url)
+            // setAddItems(data)
         }
-        getServices()
-    })
+        getAddItems()
+    },[user])
     return (
-        <div>
-            <h2>added product: {services.length}</h2>
-            <h2>added product: {services.name}</h2>
-
+        <div className='container'>
+            <h2>your Add Items: {addItems.length}</h2>
+            <div  className="row row-cols-1 row-cols-md-3 g-5">
+            {
+                addItems.map(addItem => <UserProduct
+                    key={addItem._id}
+                    addItem={addItem}
+                >
+                </UserProduct>)
+            }
+            </div>
         </div>
     );
 };

@@ -27,7 +27,7 @@ const WareHouse = () => {
             })
     }, [])
     return (
-        <div className='mar-20'>
+        <div  className='mar-20'>
             <div className="container">
                 <h2 className='text-center py-4 my-4'>Our Inventory</h2>
                 <div className="row row-cols-1 row-cols-md-2 g-5">
@@ -55,7 +55,7 @@ const WareHouse = () => {
                         </ul>
                     </article>
                 </div>
-                <Link to="/newitem"><button className='new-item-btn'>Add New Item</button></Link>
+                <Link to="/addItem"><button className='new-item-btn'>Add New Item</button></Link>
             </div>
         </div>
     );

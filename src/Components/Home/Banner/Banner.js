@@ -24,8 +24,8 @@ const Banner = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption className="text-light">
-                    <h3>Be Fit And Fine</h3>
-                    <p>Fitness is the key to success, be fit and be fine.</p>
+                    <h3>Take a Safe journey with DREAMS VEHICLE.</h3>
+                    <p>We are providing you with the best vehicle ever in the world.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -35,8 +35,8 @@ const Banner = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption className="text-dark">
-                    <h3>Be Fit And Fine</h3>
-                    <p>Fitness is the key to success, be fit and be fine.</p>
+                    <h3>Choose the best product and stay with us.</h3>
+                    <p>To make a beautiful journey with the best vehicles for you.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -46,8 +46,8 @@ const Banner = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption className="text-light">
-                    <h3>Be Fit And Fine</h3>
-                    <p>Fitness is the key to success, be fit and be fine.</p>
+                    <h3>DREAMS VEHICLE!!!</h3>
+                    <p>For the best car at the best price, choose the best one with DREAMS VEHICLE.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -58,8 +58,8 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption className="text-dark">
-                    <h3>Hard-working!</h3>
-                    <p>Hard work makes a man perfect, works harder for a better end.</p>
+                    <h3>Best friend as a good time.</h3>
+                    <p>If you think about your dream car,  we help to build it.</p>
                 </Carousel.Caption>
             </Carousel.Item>
            

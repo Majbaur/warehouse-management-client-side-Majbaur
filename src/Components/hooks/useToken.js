@@ -5,9 +5,10 @@ const useToken = user => {
     const [token, setToken] = useState('');
     useEffect(() => {
         const getToken = async () => {
+            console.log(user);
             const email = user?.user?.email;
             if (email) {
-                const { data } = await axios.post('https://desolate-gorge-07687.herokuapp.com/login', { email });
+                const { data } = await axios.post('https://powerful-river-83058.herokuapp.com/login', { email });
                 setToken(data.accessToken);
                 localStorage.setItem('accessToken', data.accessToken);
             }

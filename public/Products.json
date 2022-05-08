@@ -3,7 +3,7 @@
 
         "name": "McLare P1",
         "price": "$300000",
-        "description": "Energize your mornings and come train and workout with our personal trainers at Mutants Gym. Join our Aerobics Yoga and Zumba lessons and have fun while exercising.",
+        "description": "The McLaren P1 is a limited-production mid-engine plug-in hybrid sports car produced by British automobile manufacturer McLaren Automotive.",
         "img": "https://www.leasecosts.ca/sites/default/files/styles/car_thumb_big/public/2017-09/maserati_canada_ghibli.jpg?itok=CpHvDYzz",
         "Quantity":"15",
         "Supplier":"Malhotra Das",
@@ -14,7 +14,7 @@
         
         "name": "BMW X3",
         "price": "$1500000",
-        "description": "Build your strength and get those extra few pounds in before the swimsuit season. Come train under expert personal trainers only at Mutants Gym.",
+        "description": "The BMW X3 has 1 Petrol Engine on offer. The Petrol engine is 1998 cc. It is available with Automatic transmission. Depending upon the variant and fuel type the X3 has a mileage of 13.17 kmpl . The X3 is a 5-seater 4-cylinder car.",
         "img": "https://www.ccarprice.com/products/BMW_X3_sDrive30i_2021.jpg",
         "Quantity":"13",
         "Supplier":"Kapadia Saha",
@@ -22,9 +22,9 @@
     },
     {
         
-        "name": "X5ModelImage",
+        "name": "BMW X5Modelimage",
         "price": "$10000000",
-        "description": "If you strive for real results and want to receive the guidance you need to set yourself up for success, then this is the package for you. you'll be working with me directly and chacking in twice a week. Including full access to my Gym.",
+        "description": "The xDrive45e model comes standard with a 24.0-kWh battery pack that BMW claims are good enough for up to 30 miles of electric-only driving. The X5 can use the battery to travel up to 84 mph without tapping the gasoline engine.",
         "img": "https://motorscout.com.au/team/assets/data/066v19.jpg",
         "Quantity":"17",
         "Supplier":"James Whill",
@@ -34,7 +34,7 @@
         
         "name": "Microbus-2f7f",
         "price": "$300000",
-        "description": "If you want an awesome body structure to impress someone or to look dashing good, then this package is for you. in this package you get full access to my gym and are able to train with direct to me. and I also give you a full diet list for you.",
+        "description": "As more details and information is released, you'll be among the first to know about this groundbreaking electric vehicle. View New Volkswagen Inventory.",
         "img": "https://www.carscoops.com/wp-content/uploads/2022/03/2001-VW-Microbus-00003.jpg",
         "Quantity":"19",
         "Supplier":"Gokhale Alom",

@@ -14,20 +14,20 @@ const Inventories = () =>
     
     const [items , setItems] = GetProducts()
     
-    let newItems;
-    newItems = [...items];
+    let addItems;
+    addItems = [...items];
 
 
-    if(newItems.length!==0)
+    if(addItems.length!==0)
     {
         isLoad = false;
     }
 
-    const products = newItems.slice(0,6)
+    const products = addItems.slice(0,6)
 
 
     return (
-        <div className='mar-20'>
+        <div id='Products' className='mar-20'>
 
             <div data-aos="fade-up" className="container">
                 <h2 className='text-center py-4 my-4'>Our Inventory</h2>

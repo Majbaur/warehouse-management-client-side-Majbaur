@@ -21,13 +21,13 @@ const ProductDetailes = () => {
 
 
     const handleDelivered = () => {
-        let newItem = { ...item };
-        newItem.Quantity -= 1
-        newItem.sale += 1
+        let addItem = { ...item };
+        addItem.Quantity -= 1
+        addItem.sale += 1
         
 
-        handleItemDelivered(newItem)
-        setItem(newItem);
+        handleItemDelivered(addItem)
+        setItem(addItem);
     }
 
     const handleRestock = (event) => 
@@ -35,13 +35,13 @@ const ProductDetailes = () => {
         event.preventDefault();
 
         const amount = event.target.amount.value;
-        let newItem = { ...item };
+        let addItem = { ...item };
         const newQuantity = parseInt(amount);
-        newItem.Quantity += newQuantity;
+        addItem.Quantity += newQuantity;
 
-        handleItemRestock(newItem)
+        handleItemRestock(addItem)
         
-        setItem(newItem)   
+        setItem(addItem)   
 
     }
 
