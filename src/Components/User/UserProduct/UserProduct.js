@@ -13,7 +13,7 @@ const UserProduct = ({addItem}) => {
     const handleDelete = id =>{
         const proceed = window.confirm('Are you sure?');
         if(proceed){
-            const url = `https://desolate-gorge-07687.herokuapp.com/addedItem/${id}`;
+            const url = `http://localhost:5000/addedItem/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

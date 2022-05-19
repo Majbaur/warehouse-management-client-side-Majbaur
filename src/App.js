@@ -3,11 +3,8 @@ import './App.css';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home/Home';
 import AddProduct from './Components/Management/AddProducts/AddProduct';
-import Blog from './Components/Blog/Blog/Blog';
 import MyItems from './Components/User/MyItems/MyItems';
 import Footer from './Components/Footer/Footer';
-import ProductDetailes from './Components/Products/ProductsDetails/ProductDetailes/ProductDetailes';
-import Management from './Components/Management/Management/Management';
 import NotFound from './Components/NotFound/NotFound';
 import Login from './Components/Login/Login/Login';
 import Register from './Components/Login/Register/Register';
@@ -23,14 +20,8 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
-        <Route path='/inventory/:id' element={
-          <RequireAuth>
-            <ProductDetailes></ProductDetailes>
-          </RequireAuth>
-        }></Route>
-        <Route path='/manageInventories' element={<Management></Management>}></Route>
+        
         <Route path='/addItem' element={<AddProduct></AddProduct>}></Route>
-        <Route path="/blog" element={<Blog></Blog>}></Route>
         <Route path="/myitems" element={
           <RequireAuth>
             <MyItems>

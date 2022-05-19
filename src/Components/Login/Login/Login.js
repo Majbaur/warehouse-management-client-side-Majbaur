@@ -44,7 +44,7 @@ const Login = () => {
         const password = passwordRef.current.value;
 
         await signInWithEmailAndPassword(email, password);
-        const {data} = await axios.post('https://desolate-gorge-07687.herokuapp.com/login', {email});
+        const {data} = await axios.post('http://localhost:5000/login', {email});
         localStorage.setItem('accessToken', data.accessToken);
         navigate(from, { replace: true });
     }

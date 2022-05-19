@@ -10,7 +10,7 @@ const MyItems = () => {
     useEffect(() =>{
         const getAddItems=async () => {
             const email=user.email
-            const url = `https://desolate-gorge-07687.herokuapp.com/addedItem?email=${email}`
+            const url = `http://localhost:5000/addedItem?email=${email}`
             fetch(url, {
                 method: 'GET',
                 headers: {

@@ -6,7 +6,7 @@ const GetProducts = (page , size) =>
 
     useEffect(()=>
     {
-        fetch(`https://desolate-gorge-07687.herokuapp.com/items?page=${page}&size=${size}`)
+        fetch(`http://localhost:5000/items?page=${page}&size=${size}`)
         .then(res => res.json())
         .then(data => setProducts(data));
     } , [page , size])

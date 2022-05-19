@@ -13,7 +13,7 @@ const AddProduct = () => {
         const onSubmit = data => {
             
         console.log(data);
-        const url = `https://desolate-gorge-07687.herokuapp.com/addedItem`;
+        const url = `http://localhost:5000/addedItem`;
         fetch(url, {
             method: 'POST',
             headers: {

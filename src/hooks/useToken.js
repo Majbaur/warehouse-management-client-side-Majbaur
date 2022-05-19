@@ -7,7 +7,7 @@ const useToken = user => {
         const getToken = async () => {
             const email = user?.user?.email;
             if (email) {
-                const { data } = await axios.post('https://desolate-gorge-07687.herokuapp.com/login', { email });
+                const { data } = await axios.post('http://localhost:5000/login', { email });
                 setToken(data.accessToken);
                 localStorage.setItem('accessToken', data.accessToken);
             }
